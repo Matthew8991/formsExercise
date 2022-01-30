@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercise</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="storeNumber">Store Number</label>
+            <select name="storeNumber" id="storeNumber" required>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+            <fieldset>
+                <legend>When you visited:</legend>
+                <div>
+                    <label for="date">Date Visited</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" required>
+                </div>
+            </fieldset>
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter Name" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="johndoe@gmail.com" name="email" required>
+            </div>
+            <fieldset>
+                <legend>How would you rate your experience?</legend>
+                <div>
+                    <input type="radio" name="exp" id="1">
+                    <label for="1">Very Unsatisfactory</label>
+                </div>
+                <div>
+                    <input type="radio" name="exp" id="2">
+                    <label for="2">Unsatisfactory</label>
+                </div>
+                <div>
+                    <input type="radio" name="exp" id="3" checked>
+                    <label for="3">Average</label>
+                </div>
+                <div>
+                    <input type="radio" name="exp" id="4">
+                    <label for="4">Satisfactory</label>
+                </div>
+                <div>
+                    <input type="radio" name="exp" id="5">
+                    <label for="5">Very Satisfactory</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="userInput">Tell us about your experience:</label>
+                <br>
+                <textarea name="userInput" id="userInput" cols="30" rows="2"></textarea>
+            </div>
+            <div>
+                <label for="visits">How often have you visited us in the last month?</label>
+                <br>
+                <input type="number" name="visits" id="visits" min="1" max="31">
+            </div>
+            <input type="checkbox" name="contact" id="contact" required>
+            <label for="contact">Would you like to be contacted about your experience?</label>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="submit">
+            <br>
+            <input type="reset" name="reset" id="reset">
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
